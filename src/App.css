@@ -1,0 +1,243 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  display: block;
+}
+.chat__conversation {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.container-chat {
+  font-weight: 400;
+}
+:root {
+  --color-primary: rgb(37, 38, 38);
+  --color-secondary: #b52f4e;
+}
+.chat__conversation-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.chat, .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.chat__reactions {
+  width: 90%;
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: stretch;
+  font-size: .95rem;
+}
+.chat__actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  border-top: 1.4px solid #b0b0b0;
+  border-bottom: 0.5px solid #d3d3d3;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.logo-container {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 1.8rem;
+}
+.quedate-container, body {
+  width: 100vw;
+}
+.chat__conversation-box-content-comment {
+  padding: 1rem;
+  background-color: #f2f3f5;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.chat__conversation-box-content-cta {
+  margin-top: 0.3rem;
+  padding-left: 1.5rem;
+  color: #726695;
+}
+.chat__conversation-box-img {
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  align-self: baseline;
+}
+.chat__conversation {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+html {
+  font-size: 62.5%;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+:host, :root {
+  --rem: 16;
+}
+
+user agent stylesheet
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+.chat__actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  border-top: 1.4px solid #b0b0b0;
+  border-bottom: 0.5px solid #d3d3d3;
+}
+
+.chat__conversation-box-content-comment {
+  padding: 1rem;
+  background-color: #f2f3f5;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+input {
+  
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding-block: 1px;
+  padding-inline: 2px;
+}
+.chat__conversation-box-content-cta {
+  margin-top: 0.3rem;
+  padding-left: 1.5rem;
+  color: #726695;
+}
+marquee {
+  display: inline-block;
+  width: -webkit-fill-available;
+  background-color: rgb(9, 19, 45);
+  width: 100%;
+}
+:host {
+  display: inline-block;
+  overflow: hidden;
+  text-align: initial;
+  white-space: nowrap;
+}
+.chat__reactions-icon {
+  width: 1.2rem;
+  margin-right: 0.2rem;
+}
+.chat__reactions-text {
+  margin-left: 0.5rem;
+}
+.chat__reactions-counter {
+  margin-left: 1.8rem;
+}
+.chat__reactions-text {
+  margin-left: 0.5rem;
+}
+.chat, .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.quedate-container, body {
+  width: 100vw;
+}
+.chat__conversation-write input {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: #f2f3f5;
+  border-radius: 100px;
+  padding: 0.8rem;
+  color: var(--color-primary);
+  padding-left: 1rem;
+  outline: 0;
+}
